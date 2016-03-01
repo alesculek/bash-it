@@ -5,7 +5,7 @@ about-alias 'general aliases'
 alias sl=ls
 alias ls='ls -G'        # Compact view, show colors
 alias la='ls -AF'       # Compact view, show hidden
-alias ll='ls -al'
+alias ll='ls -alh'
 alias l='ls -a'
 alias l1='ls -1'
 
