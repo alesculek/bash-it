@@ -39,3 +39,7 @@ alias psg=psgFunction
 # Weather service
 alias wpraha="wttr Prague"
 alias wtrutnov="wttr Trutnov"
+
+# the fuck
+
+eval $(thefuck --alias)
