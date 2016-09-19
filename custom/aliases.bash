@@ -43,3 +43,4 @@ alias wtrutnov="wttr Trutnov"
 # the fuck
 
 eval $(thefuck --alias)
+alias f="fuck"
