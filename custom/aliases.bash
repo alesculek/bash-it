@@ -2,8 +2,27 @@
 ## Common
 ##
 
+psgFunction() {
+  ps auxwf | grep -v grep | grep --color $1
+}
+alias psg=psgFunction
+
+
 alias cdp="cd ${HOME}/Projects"
 alias colibs="cd ${HOME}/composer/libs"
+
+
+hardKill() {
+  echo "Hardkill: $1"
+  kill -9 $(psgFunction $1 | awk '{print $2}' | tr '\n' ' '; echo "")
+}
+alias hardkill=hardKill
+
+
+alias killff="hardkill firefox"
+alias killps="hardkill phpstorm"
+alias killev="hardkill evolution"
+alias killrh="hardkill rhythmbox"
 
 phpunit() {
   phpunit "$@"
@@ -30,11 +49,6 @@ gitRebaseInteractive() {
 }
 alias ggr=gitRebaseInteractive
 
-# Processes management
-psgFunction() {
-  ps auxwf | grep -v grep | grep --color $1
-}
-alias psg=psgFunction
 
 # Weather service
 alias wpraha="wttr Prague"
