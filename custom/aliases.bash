@@ -24,6 +24,8 @@ alias killps="hardkill phpstorm"
 alias killev="hardkill evolution"
 alias killrh="hardkill rhythmbox"
 
+alias fixroute="sudo route add default gw 10.20.5.254 dev eth0"
+
 phpunit() {
   phpunit "$@"
 }
