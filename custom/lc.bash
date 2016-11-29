@@ -1,0 +1,2 @@
+source ~/.lc/listcommands.sh
+
