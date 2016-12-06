@@ -1,5 +1,4 @@
 .atom-build.json
-*/enabled/*
 .DS_Store
 .rvmrc
 aliases/custom.aliases.bash
